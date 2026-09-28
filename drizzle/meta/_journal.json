@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1790554666084,
+      "tag": "0000_white_ken_ellis",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1790554763740,
+      "tag": "0001_blushing_peter_quill",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1790554822386,
+      "tag": "0002_skinny_typhoid_mary",
+      "breakpoints": true
+    }
+  ]
+}

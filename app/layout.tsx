@@ -1,0 +1,3 @@
+import type {Metadata} from 'next';import './globals.css';import './premium.css';
+export const metadata:Metadata={title:{default:'Neural Networks Company | Intelligent Digital Ecosystems',template:'%s | Neural Networks Company'},description:'Software, artificial intelligence, automation, data and infrastructure connected around your business.',openGraph:{title:'Neural Networks Company',description:'Building intelligent digital ecosystems.',images:['/assets/neural-logo.png']},icons:{icon:'/assets/neural-logo.png'}};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}
