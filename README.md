@@ -1,5 +1,12 @@
 # Neural Networks Company website
 
+## Business Hub / CRM (phase one)
+
+The new `portal/` and `platform/` directories implement a bilingual customer portal and role-protected CRM, projects and tasks. See [BUSINESS_PLATFORM.md](BUSINESS_PLATFORM.md) for scope, permissions, deployment steps, tested behavior, limitations and the Meta Inbox roadmap.
+
+GitHub Pages previews the public website and portal sign-in screen only. A Cloudflare Worker + separate D1 database, owner account and Turnstile configuration are required for real account creation and lead delivery. The website form reports success only after the server confirms storage; while the API is unavailable it explicitly offers local brief download instead. No default administrator credentials are committed.
+
+
 Source code for the bilingual website. This archive contains the tracked source at commit fb51b4b86b3fa8d087028fb41c5ae91f40f77091. It excludes dependencies, build output, environment files, credentials, and the deployment-specific Sites project identifier.
 
 ## Stack
@@ -25,3 +32,4 @@ Unzip this archive at the root of your new repository, preserving directory stru
 This source currently references the private preview URL in `app/[...slug]/page.tsx`, `app/sitemap.ts`, `app/robots.ts`, and `app/layout.tsx`. Replace it with your production domain before launch. The server-backed application is separate from the GitHub Pages static presentation.
 
 The original site-specific deployment manifest was intentionally omitted. The included starter scripts contain Sites-specific helpers, so a different hosting provider may require adapting build and deployment configuration. The CMS supports projects, insights, and basic content/settings management; not every page section is editable in the admin panel yet.
+

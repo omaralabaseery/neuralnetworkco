@@ -1,0 +1,9 @@
+{
+  "name": "neural-networks-business",
+  "main": "src/worker.mjs",
+  "compatibility_date": "2026-09-28",
+  "assets": {"directory": "./dist", "binding": "ASSETS", "run_worker_first": true},
+  "d1_databases": [{"binding": "DB", "database_name": "neural-business", "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID", "migrations_dir": "migrations"}],
+  "vars": {"PUBLIC_ORIGIN": "https://REPLACE_WITH_YOUR_DOMAIN", "TURNSTILE_SITE_KEY": "REPLACE_WITH_PUBLIC_SITE_KEY"},
+  "triggers": {"crons": ["0 3 * * *"]}
+}
